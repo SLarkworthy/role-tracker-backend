@@ -4,7 +4,7 @@ const app = express();
 const users = require('./routes/api/users')
 
 app.use(express.json());
-app.use("/api/users", users);
+app.use("/api", users);
 
 const db = require("./config/keys").mongoURI;
 // Connect to MongoDB
